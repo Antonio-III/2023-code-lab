@@ -3,40 +3,30 @@
 #Extension Problem (Optional):
 #If valid, have the program correctly classify the type of triangle as either: Equilateral, Isosceles or Scalene (https://www.mathsisfun.com/triangle.html)
 
-entered_triangle_sides = 0
-triangle_sides = []
+#Start of program
+entered_triangle_sides = 0 #A counter to see how many sides have been input
+triangle_sides = [] #Created a list to store all the sides that have been input 
 
-while entered_triangle_sides <3:
+while entered_triangle_sides <3: #Runs a loop to run the code below repeatedly
     triangle_side = int(input("Enter a triangle side:\n"))
-    entered_triangle_sides = entered_triangle_sides +1
-    triangle_sides.append(triangle_side)
-
-if triangle_sides[0] + triangle_sides[1] > triangle_sides[2]:
-    triangle_check = True
-    
-elif triangle_sides[1] + triangle_sides[2] > triangle_sides[0]:
-    triangle_check = True
-    
-elif triangle_sides[2] + triangle_sides[0] > triangle_sides[1]:
-    triangle_check = True
-    
-else:
-    triangle_check = False
+    triangle_sides.append(triangle_side) #Adds the input number to the list
+    entered_triangle_sides = entered_triangle_sides +1 #Once the code above has been executed, this will add a +1 to the variable on line 6
     
 
-if triangle_check == True:
+#Checks if the input sides pass the triangle inequality theorem
+if triangle_sides[0] + triangle_sides[1] > triangle_sides[2] and triangle_sides[1] + triangle_sides[2] > triangle_sides[0] and triangle_sides[2] + triangle_sides[0] > triangle_sides[1]:
     
-    print("You have entered a triangle! Congratulations!")
-
-  #this is for the extension problem
+    print("You have entered a triangle! Congratulations!") #The input sides must pass the triangle inequality theorem for this to execute
+    
+    #This is for the extension problem. This executes if the condition (line 16) is met 
     if triangle_sides[0] == triangle_sides[1] and triangle_sides[1] == triangle_sides[2]:
-        print("You entered an Equilateral Triangle!")
+        print("And you entered an Equilateral Triangle!")
     
     elif triangle_sides[0] == triangle_sides[1] or triangle_sides[1] == triangle_sides[2] or triangle_sides[2] == triangle_sides[0]:
-        print("You entered an Isosceles Triangle!")
+        print("And you entered an Isosceles Triangle!")
         
     else:
-        print("You have entered a Scalene Triangle!")
+        print("And you have entered a Scalene Triangle!")
     
 else: 
     print("This is not a valid triangle! :((\nSad!")
