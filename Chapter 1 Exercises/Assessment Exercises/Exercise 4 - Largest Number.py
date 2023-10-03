@@ -22,7 +22,7 @@ elif three_nums[2] > three_nums[0] and three_nums[2] > three_nums[1]:
 else: 
     # All numbers are equal
     if three_nums[0] == three_nums[1] and three_nums[0] == three_nums[2]:
-      print(f"All numbers are equal")
+      print(f"All numbers are equal, those being {three_nums[index]}, {three_nums[index+1]}, and {three_nums[index+2]}.")
     # There are 2 greatest numbers
     else:
-      print("The {number_place[index]} and {number_place[index+1]} numbers are the greatest number, being {three_nums[index]}.")
+      print(f"The {number_place[index]} and {number_place[index+1]} numbers are the greatest number, being {three_nums[index]}.")
