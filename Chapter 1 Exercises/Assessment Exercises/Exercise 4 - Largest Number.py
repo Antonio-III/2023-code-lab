@@ -25,4 +25,4 @@ else:
       print(f"All numbers are equal, those being {three_nums[index]}, {three_nums[index+1]}, and {three_nums[index+2]}.")
     # There are 2 greatest numbers
     else:
-      print(f"The {number_place[index]} and {number_place[index+1]} numbers are the greatest number, being {three_nums[index]}.")
+      print(f"The {number_place[index]} and {number_place[index+1]} numbers are both the greatest numbers, being {three_nums[index]}.")
