@@ -18,17 +18,16 @@ sorted_nums = dict(sorted(three_nums.items(), key = lambda item: item[1], revers
 desc_num_keys = list(sorted_nums.keys())
 desc_num_values = list(sorted_nums.values())
     
-# Find the greatest number in the list using multiple if-else statements.
+# Find the greatest number in the list using multiple if-else statements. This automatically finds the the highest entered number, along with its associated key
 if desc_num_values[0] > desc_num_values[1] and desc_num_values[0] > desc_num_values[2]: # Both conditions must be true for the code under to execute
-    print(f"The {desc_num_keys[0]} number is the highest, being {desc_num_values[0]}") # Outputs the greatest number as well as their position in the list
+    print(f"The {desc_num_keys[0]} number is the greatest, being {desc_num_values[0]}.") # Outputs the greatest number as well as their position in the list
     
-
 # In case of all numbers being equal or that there are 2 greatest numbers
 else: 
     # All numbers are equal
     if desc_num_values[0] == desc_num_values[1] and desc_num_values[0] == desc_num_values[2]:
-      print(f"All numbers are equal, those being {desc_num_values[0]}, {desc_num_values[1]}, and {desc_num_values[2]}.")
+      print(f"All numbers are equal, that being {desc_num_values[0]}.")
         
     # There are 2 greatest numbers
     else:
-        print(f"The {desc_num_keys[0]} and {desc_num_keys[1]} numbers are both the greatest numbers, being {desc_num_values[0]}.")
+        print(f"The {desc_num_keys[0]} and {desc_num_keys[1]} numbers are both the greatest, being {desc_num_values[0]}.")
