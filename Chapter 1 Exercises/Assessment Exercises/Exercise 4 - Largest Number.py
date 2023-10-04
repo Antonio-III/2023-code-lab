@@ -15,7 +15,7 @@ desc_num_values = list(sorted_nums.values())
     
 # Find the greatest number in the list using multiple if-else statements.
 if desc_num_values[0] > desc_num_values[1] and desc_num_values[0] > desc_num_values[2]: # Both conditions must be true for the code under to execute
-    print(f"The {highest_num_keys} number is the highest, being {highest_num_values}") # Outputs the greatest number as well as their position in the list
+    print(f"The {desc_num_keys} number is the highest, being {desc_num_values}") # Outputs the greatest number as well as their position in the list
     
 
 # In case of all numbers being equal or that there are 2 greatest numbers
