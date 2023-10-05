@@ -21,9 +21,10 @@ while exit_loop == False:
   
   while invalid_char != False: #This is set up to always pass the condition of the boolean so we have to go through this loop at least once, for every iteration 
     if enter_char == 'y':
-      iterations +=1 # We add integer 1 to the iterations since this marks the completion of 1 loop
       invalid_char = False # We replaced the boolean value here because we need to fail the condition of this second loop, so we can continue to the next iteration of the main loop
       # Removed 'continue' statement in this line because even without it, once the last code has been executed (line 16), we will automatically go to another iteration
+      
+      iterations +=1 # We add integer 1 to the iterations since this marks the completion of 1 loop
     
     elif enter_char == 'n':
       exit_loop = True # Set boolean to fail the condition of the main loop
