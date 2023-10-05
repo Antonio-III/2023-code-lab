@@ -33,6 +33,3 @@ while exit_loop == False:
     else:
       # Initialize a variable that takes an input to see if the respone will be a valid character, else this code will keep executing. We don't need to change the boolean value to pass the condition of the second 'while loop' here because it already passes the condition. Adding it will not make a difference
       enter_char = input(f"Invalid input. Would you like to loop another iteration? (y/n) \n")
-    
-
-    
