@@ -22,12 +22,15 @@ while exit_loop == False:
   while invalid_char != False: #This is set up to always pass the condition of the boolean so we have to go through this loop at least once, for every iteration 
     if enter_char == 'y':
       iterations +=1 # We add integer 1 to the iterations since this marks the completion of 1 loop
-      invalid_char = False # We replaced the boolean value here because we need to fail the condition of the second loop, so we can continue to the next iteration of the main loop
+      invalid_char = False # We replaced the boolean value here because we need to fail the condition of this second loop, so we can continue to the next iteration of the main loop
       # Removed 'continue' statement in this line because even without it, once the last code has been executed (line 16), we will automatically go to another iteration
+    
     elif enter_char == 'n':
-      exit_loop = True
-      break
+      exit_loop = True # Set boolean to fail the condition of the main loop
+      break # Exit the loop we're currently in (the second 'while loop')
+      
     else:
+      # Initialize a variable that takes an input to see if the respone will be a valid character, else this code will keep executing. We don't need to change the boolean value to pass the condition of the second 'while loop' here because it already passes the condition. Adding it will not make a difference
       enter_char = input(f"Invalid input. Would you like to loop another iteration? (y/n) \n")
     
 
