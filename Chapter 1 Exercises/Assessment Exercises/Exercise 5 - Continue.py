@@ -3,7 +3,7 @@
 # Initialize a counter
 iterations = 0 
 
-# Initialize a boolean to keep track if the user wants to exit the loop
+# Initialize a boolean to track if the user wants to exit the loop
 exit_loop = False 
 
 # Write the 'while loop' code block
