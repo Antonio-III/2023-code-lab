@@ -11,20 +11,22 @@ while exit_loop == False:
   
   # Initialize a boolean to be used later in the code for another 'while loop'. It is placed inside the loop so its variable would reset per iteration
   invalid_char = True 
+
   
   if iterations == 1:
-    enter_char = input(f"You are in a 'while loop'. You have looped {iterations} time. Would you like to loop another iteration? (y/n) \n")
+    # So the statement is grammmatically correct if we've looped for exactly one (1) time
+    enter_char = input(f"You are in a 'while loop'. You have looped {iterations} time. Would you like to loop another iteration? (y/n) \n") 
   else:
     enter_char = input(f"You are in a 'while loop'. You have looped {iterations} times. Would you like to loop another iteration? (y/n) \n")
 
-  # I created another 'while loop' and placed it inside the main loop because I want to have a different outcome when the user enters a different character than the ones given (y/n). So they will be looping this code without going to the next iteration if they keep entering an invalid character
+  # I created another 'while loop' and placed it inside the main loop because I want to have a different outcome when the user enters a different character than the ones given (y/n); so that they will be looping this code without going to the next iteration if they keep entering an invalid character
   
-  while invalid_char != False: #This is set up to always pass the condition of the boolean so we have to go through this loop at least once, for every iteration 
+  while invalid_char != False: #This is set up to pass the condition of the boolean (in line 13) so we have to go through this loop at least once, for every iteration 
     if enter_char == 'y':
       invalid_char = False # We replaced the boolean value here because we need to fail the condition of this second loop, so we can continue to the next iteration of the main loop
       # Removed 'continue' statement in this line because even without it, once the last code has been executed (line 16), we will automatically go to another iteration
       
-      iterations +=1 # We add integer 1 to the iterations since this marks the completion of 1 loop
+      iterations +=1 # We add integer 1 to the iterations count since this marks the completion of 1 loop
     
     elif enter_char == 'n':
       exit_loop = True # Set boolean to fail the condition of the main loop
