@@ -29,7 +29,7 @@ print("\n") # Create 2 newlines. Output ends with a newline by default. This wil
 # 3. To output our highest value, we use the 'max()' function. To output our lowest value, we use the 'min()' function
 highest_value = max(int_list)
 lowest_value = min(int_list)
-print(f"The highest number in our 'int' list is {highest_value} and the lowest is {lowest_value}! \n")
+print(f"The highest number in our 'int' list is '{highest_value}' and the lowest is '{lowest_value}'! \n")
 
 
 # 4. To sort the elements in ascending order
@@ -45,4 +45,4 @@ for x in range(2):
   int_list.append(randint(0,100))
 
 # 7. Then we print the list itself after appending
-print(int_list)
+print(f"This is the list after appending 2 elements: {int_list}")
