@@ -19,9 +19,9 @@ int_list = [randint(0,100) for i in range(10)]
 
 # 2. We output the list using a 'for loop'. It has 10 values so we will loop for 10 times
 index_to_print = 0 # We create a variable to be incremented by 1 to be used in the 'for loop'
-print("This is the list as it is:", end = " ")
+print("This is the list as it is:", end = " ") # We change the 'end' value so that the numbers will be output in the same line as this statement
 for loop in range(10):
-  print(int_list[index_to_print],end = ", ")
+  print(int_list[index_to_print],end = ", ") # We change the 'end' value here as well so that the numbers are separated by a comma (,) and space ( ) instead of a newline (\n)
   index_to_print+=1
 
 print("\n") # Create 2 newlines. Output ends with a newline by default. This will make it so that there is 1 empty space gap for every output
