@@ -45,4 +45,4 @@ for x in range(2):
   int_list.append(randint(0,100))
 
 # 7. Then we print the list itself after appending
-print(f"This is the list after appending 2 elements: {int_list}")
+print(f"This is the list after appending 2 elements: {int_list}.")
