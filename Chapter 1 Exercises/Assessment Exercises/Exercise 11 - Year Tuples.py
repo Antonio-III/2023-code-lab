@@ -15,7 +15,7 @@ print(f"The 3rd-to-the-last number in the tuple is: {year[-3]}! \n") # This prin
 # 3. To reverse the tuple, we will use a slicing notation([::]). Tuples are immutable, so we can't directly modify it. But what we can do is create a copy of the tuple and order sort in a reverse order (in terms of index positions)
 reverse_year = year[::-1]
 
-print(f"This is the original tuple: {year}. \n And this is the reversed tuple: {reverse_year}! \n") # We print the original and the reversed copy 
+print(f"This is the original tuple: {year}.\n And this is the reversed tuple: {reverse_year}! \n") # We print the original and the reversed copy 
 
 # 4. We will use '.count()' to see how many elements match the integer '2009'
 times_2009_appeared = year.count(2009)
