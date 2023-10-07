@@ -17,7 +17,7 @@ while exit_loop == False:
     
     while True:
         
-        try_again = input("Would you like to continue? (y/n) \n")
+        try_again = input("Would you like to continue? (y/n) \n") # We put this code inside the second loop because we want to keep asking the user if they would like to continue if they keep entering an invalid character
         
         if try_again == 'y':
             break
