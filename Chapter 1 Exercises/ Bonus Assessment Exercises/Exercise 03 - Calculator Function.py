@@ -87,7 +87,7 @@ while exit_main_loop != True:
 
       result = divide(first_num,sec_num) 
 
-      print(f"{result_txt.format(first_num,sec_num,operation_str,result)} \n")
+      print(f"{result_txt.format(first_num,sec_num,operation_str,result)} \n\n")
 
   elif enter_num == '5':
     operation_str = "modulo division"
