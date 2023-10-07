@@ -87,7 +87,7 @@ while exit_main_loop != True:
 
       result = divide(first_num,sec_num) 
 
-      print(f"{result_txt.format(first_num,sec_num,operation_str,result)} \n\n")
+      print(f"{result_txt.format(first_num,sec_num,operation_str,result)} \n")
 
   elif enter_num == '5':
     operation_str = "modulo division"
@@ -99,7 +99,7 @@ while exit_main_loop != True:
     print(f"{result_txt.format(first_num,sec_num,operation_str,result)} \n")
 
   while True:
-    try_again = input("Would you like to perform another calculation? (y/n) \n")
+    try_again = input("Would you like to perform another calculation? (y/n) \n\n")
     
     if try_again == 'y':
       iterations = 1 
