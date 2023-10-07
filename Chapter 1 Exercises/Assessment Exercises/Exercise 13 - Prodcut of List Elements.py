@@ -10,7 +10,7 @@ def list_product(my_list):
     # We will call the 'seed()' function to seed our 'randint()' functions. The seed of 'randint()' function inside 'seed()' will be the current system time  
     seed(randint(0,10))
 
-    # Initialize a counter for the total product. For some reason, putting this variable outside the function will not work
+    # Initialize a counter for the total product. Putting this variable outside the function will not work because since we will call this variable later on (line 19), Python thinks that we are referring to a local variable (a variable inside the function) with the same name, of which doesn't exist, and so will cause an error
     total_product = 1
 
     print(f"These are the numbers in that list: {rand_list}! \n")
