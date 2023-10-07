@@ -4,7 +4,6 @@
 from random import seed
 from random import randint
 
-
 def list_product(my_list):
     
     # We will call the 'seed()' function to seed our 'randint()' functions. The seed of 'randint()' function inside 'seed()' will be the current system time  
