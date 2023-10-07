@@ -99,7 +99,7 @@ while exit_main_loop != True:
     print(f"{result_txt.format(first_num,sec_num,operation_str,result)} \n")
 
   while True:
-    try_again = input("Would you like to perform another calculation? (y/n) \n\n")
+    try_again = input("Would you like to perform another calculation? (y/n) \n")
     
     if try_again == 'y':
       iterations = 1 
@@ -111,5 +111,7 @@ while exit_main_loop != True:
       
     else:
       continue # You will be stuck in this loop until you enter either 'y' or 'n'
-      
+  
+ print() # We will create an empty space after every iteration
+
 print("You've exited the loop!")
