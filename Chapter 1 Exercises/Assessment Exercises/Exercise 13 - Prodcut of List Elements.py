@@ -16,6 +16,7 @@ def list_product(my_list):
     print(f"These are the numbers in that list: {rand_list}! \n")
     
     for i in my_list:
+        # The only reason we have this is for the first iteration. After the first iteration, it functionally is useless since we are assigning the same value twice (see line 26)
         product = total_product
 
         # We can use a variable's previous value and assign it to the same variable, which will replace the old one
