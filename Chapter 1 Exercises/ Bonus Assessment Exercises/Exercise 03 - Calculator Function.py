@@ -43,75 +43,76 @@ exit_main_loop = False
 
 # We will put our code inside a 'while' loop
 while exit_main_loop != True:
-  exit_sec_loop = False
+ 
+ exit_sec_loop = False
   
-  if iterations == 0:
-      enter_num = input(f"{start_txt[iterations]} \n")
-  else:
-    enter_num = input(f"{start_txt[iterations]} \n")
+ if iterations == 0:
+  enter_num = input(f"{start_txt[iterations]} \n")
+ else:
+  enter_num = input(f"{start_txt[iterations]} \n")
+ 
+ if enter_num == '1':
+  # Make a string variable to pass later on
+  operation_str = "addition"
 
-  if enter_num == '1':
-      # Make a string variable to pass later on
-      operation_str = "addition"
+  # We assign the 2 returned values to these variables 
+  first_num, sec_num = operation()
+
+  result = add(first_num,sec_num) # Call the 'add()' function as we pass these 2 variables and store it in a variable
+
+  # We pass 4 variables to replace our 4 placeholders using '.format()' method
+  print(f"{result_txt.format(first_num,sec_num,operation_str,result)} \n")
+
+ elif enter_num == '2':
+  operation_str = "subtraction"
       
-      # We assign the 2 returned values to these variables 
-      first_num, sec_num = operation()
+  first_num, sec_num = operation()
 
-      result = add(first_num,sec_num) # Call the 'add()' function as we pass these 2 variables and store it in a variable
-
-      # We pass 4 variables to replace our 4 placeholders using '.format()' method
-      print(f"{result_txt.format(first_num,sec_num,operation_str,result)} \n")
-
-  elif enter_num == '2':
-      operation_str = "subtraction"
+  result = subtract(first_num,sec_num)
       
-      first_num, sec_num = operation()
+  print(f"{result_txt.format(first_num,sec_num,operation_str,result)} \n")
 
-      result = subtract(first_num,sec_num)
-      
-      print(f"{result_txt.format(first_num,sec_num,operation_str,result)} \n")
-
-  elif enter_num == '3':
-      operation_str = "multiplication"
+ elif enter_num == '3':
+  operation_str = "multiplication"
     
-      first_num, sec_num = operation()
+  first_num, sec_num = operation()
 
-      result = multiply(first_num,sec_num) 
+  result = multiply(first_num,sec_num) 
 
-      print(f"{result_txt.format(first_num,sec_num,operation_str,result)} \n")
+  print(f"{result_txt.format(first_num,sec_num,operation_str,result)} \n")
 
-  elif enter_num == '4':
-      operation_str = "divison"
+ elif enter_num == '4':
+  operation_str = "divison"
       
-      first_num, sec_num = operation()
+  first_num, sec_num = operation()
 
-      result = divide(first_num,sec_num) 
+  result = divide(first_num,sec_num) 
 
-      print(f"{result_txt.format(first_num,sec_num,operation_str,result)} \n")
+  print(f"{result_txt.format(first_num,sec_num,operation_str,result)} \n")
 
-  elif enter_num == '5':
-    operation_str = "modulo division"
+ elif enter_num == '5':
+   operation_str = "modulo division"
      
-    first_num, sec_num = operation()
+   first_num, sec_num = operation()
     
-    result = modulo(first_num,sec_num)
+   result = modulo(first_num,sec_num)
       
-    print(f"{result_txt.format(first_num,sec_num,operation_str,result)} \n")
+   print(f"{result_txt.format(first_num,sec_num,operation_str,result)} \n")
 
-  while True:
-    try_again = input("Would you like to perform another calculation? (y/n) \n")
+ while True:
+  try_again = input("Would you like to perform another calculation? (y/n) \n")
     
-    if try_again == 'y':
-      iterations = 1 
-      break # Leave the second loop, which will make up go back to the top of the main loop
+  if try_again == 'y':
+   iterations = 1 
+   break # Leave the second loop, which will make up go back to the top of the main loop
       
-    elif try_again == 'n':
-      exit_main_loop = True # This will fail the condition when the program inevitably checks the 'while' loop condition 
-      break # Exit this second loop
+  elif try_again == 'n':
+   exit_main_loop = True # This will fail the condition when the program inevitably checks the 'while' loop condition 
+   break # Exit this second loop
       
-    else:
-      continue # You will be stuck in this loop until you enter either 'y' or 'n'
-  
- print() # We will create an empty space after every iteration
+  else:
+   continue # You will be stuck in this loop until you enter either 'y' or 'n'
+   
+   print() # We will create an empty space after every iteration
 
 print("You've exited the loop!")
