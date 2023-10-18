@@ -13,11 +13,11 @@ row = [30*i for i in range(5)]
 
 # ----------
 
-# Create 5 variables wih the values: 0, 50, 250, 300, 400
+# Create 5 variables wih the values: 0, 50, 250, 300
 column = []
 increment = 0
 
-for i in range(5):
+for i in range(4):
     if i == 2:
         column.append(250)
         increment = 250
@@ -25,23 +25,24 @@ for i in range(5):
         column.append(increment)
 
     if i >2:
-        increment +=100
+        increment+=100
     else:
         increment+=50
-
-# We add a 1 to not cause an overlap between 2 elements ('Entry' and 'Button')
-column[4] +=1
 
 # ----------
 
 
 entry_width = 350 # Takes away x coords.
 
+
 # We have a custom height because I want the 'Entry' to be approx. the same height as the 'Button'. Chose divisible by 5
 entry_height = 25
 
 # Consistent width across all buttons
 button_width = 80
+
+# We add a 1 to not cause an overlap between 2 elements ('Entry' and 'Button')
+column.append(column[1] + entry_width + 1)
 
 # ----------
 
