@@ -9,10 +9,12 @@ root=Tk()
 root.geometry('600x600')
 
 # Insert an image to and store in a var
-img=ImageTk.PhotoImage(Image.open('Images\marek-szturc-8Ou3EZmTMWA-unsplash.jpg'))
+img=ImageTk.PhotoImage(Image.open('Images/polar-bear-484515_640.jpg'))
 
-Label(root, image = img)
-Label.pack()
+picture = Label(root, image = img)
+
+# Output the picture
+picture.pack()
 
 # Start the app
 root.mainloop()
