@@ -16,5 +16,7 @@ tk.Label(main,text='Top text').grid()
 # ---CHANGE THE ICON USING ICONBITMAP---
 main.iconbitmap('Images/favicon.ico')
 
+# ----------
+
 # Start the app
 main.mainloop()

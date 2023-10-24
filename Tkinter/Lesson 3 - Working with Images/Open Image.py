@@ -1,5 +1,5 @@
 from tkinter import *
-from PIL import ImageTk, Image
+from PIL import ImageTk
 
 
 # Create an output window
@@ -9,7 +9,7 @@ root=Tk()
 root.geometry('600x600')
 
 # Insert an image to and store in a var
-img=ImageTk.PhotoImage(Image.open('Images/polar-bear-484515_640.jpg'))
+img=ImageTk.PhotoImage(file='Images/polar-bear-484515_640.jpg')
 
 picture = Label(root, image = img)
 
