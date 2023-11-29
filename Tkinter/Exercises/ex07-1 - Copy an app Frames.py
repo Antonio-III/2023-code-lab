@@ -2,7 +2,7 @@
 import tkinter as tk
 
 #import 2 PIL functions or whatever
-from PIL import ImageTk, Image
+from PIL import ImageTk, Image # 'Image' is for resizing
 
 # ---SETUP THE APP---
 
@@ -54,13 +54,13 @@ sms.place(relx=.5,rely=.5, anchor = 'center') # When in doubt, use 'anchor'
 # ---(4) CREATE ANOTHER FRAME---
 image_frame = tk.Frame(root,bg='red')
 
-# Output the image
+# Output the frame
 image_frame.place(rely=.45,width=350,height=400)
 
 
 # ---(5) INSERT ANOTHER IMAGE---
 
-# We will resize the image
+# We will resize the image by opening it first
 img = Image.open('Images/image2.png')
 
 # Update the var with the resized image

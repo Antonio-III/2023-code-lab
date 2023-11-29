@@ -23,7 +23,8 @@ Label(root,
 
 # Entry widget is an input line
 
-# 'columnspan' takes space of NON-EMPTY cells starting from above its default value (1). Having more 'columnspan' than non-empty cells will have no immediate effect (you have to fill columns to show effect)
+# 'columnspan' takes space of NON-EMPTY grid starting from above its default value (1).
+#   columnspan 2 will take the space 1 of column. Having more 'columnspan' than non-empty grids will have no immediate effect (you have to fill columns to show effect)
 # We have to declare 'row' otherwise it will add itself on the bottom-right of the last element
 # We declare a 'sticky' because by default, the widget will not fill the cells given, so we 'sticky' it to 'WestEast' to expand fully in its cell. This is because other 'button' cells have different content sizes, so to match them all, we apply 'sticky=we'
 Entry(root).grid(row=0,column=1,columnspan=3,sticky='we',padx=2,pady=2)
@@ -74,7 +75,6 @@ Button(root, text='Replace All').grid(row=3, column=4,stick='we')
 
 # Row 4
 Checkbutton(root, text= 'Wrap Around').grid(row=4,column=1, sticky='w')
-
 
 
 

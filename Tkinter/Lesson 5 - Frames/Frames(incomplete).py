@@ -1,7 +1,7 @@
 import tkinter as tk
 
 # Create an output window
-root - tk.Tk()
+root = tk.Tk()
 
 # Set a title
 root.title('Frames')

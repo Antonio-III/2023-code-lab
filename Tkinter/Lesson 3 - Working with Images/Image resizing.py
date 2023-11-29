@@ -28,7 +28,7 @@ resize_img = base_img.resize((200,200))
 # Load the image using 'PhotoImage'
 ready_resize_img = ImageTk.PhotoImage(resize_img) 
 
-# Attach the image to a widget 'Label'
+# Attach the image to the widget 'Label'
 display_resize_img = Label(root,image = ready_resize_img)
 
 # Output the image
