@@ -7,7 +7,7 @@ class Cat():
     def display(self):
         print(f"Cat name: {self.name}")
     def get_age(self):
-        return f"cat's age: {self.__age}"
+        return f"cat's age: {self.age}"
 
 
 
@@ -16,7 +16,8 @@ cat1=Cat('Catname',21)
 
 print(cat1.get_age())
 print(cat1.name)
-# will not work. __age not defined?
-#print(cat1.__age)
+
+# acess a private variable
+print(cat1._Cat__age)
 
 print(cat1.age)

@@ -17,7 +17,7 @@ def sumof(number1,number2):
 root = tk.Tk()
 
 # window size
-root.geometry('600x600')
+root.geometry('400x400')
 
 l1=tk.Label(root,text=f'Your 2 numbers: {num1} and {num2}',font=('Tahoma',18,'bold'))
 l1.place(relx=.5,anchor='n')

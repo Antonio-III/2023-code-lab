@@ -21,7 +21,7 @@ print(snacks) #will include the 2 added elements
 popped_snacks = snacks.pop()
 print(snacks)
 
-#how to remove .pop() to remove an item BASED on their position?
+#how to use .pop() to remove an item BASED on their position?
 popped_snacks = snacks.pop(0)
 print(snacks)
 

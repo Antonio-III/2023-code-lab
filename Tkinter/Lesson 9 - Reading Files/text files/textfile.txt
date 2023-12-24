@@ -1,0 +1,7 @@
+This is textfile.txt. Hello 
+line 2
+line 3 line 4 (is inline)
+This has gaps because of 2 newline chars.
+1 from the notepad \n
+and another by default of the print() function
+making it 2 newlines, like so \n\n

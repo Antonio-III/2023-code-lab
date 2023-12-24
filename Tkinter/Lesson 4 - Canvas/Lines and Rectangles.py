@@ -42,10 +42,9 @@ canvas.create_line(390,10,390,110,fill='white',width=2)
 # ---CREATE A RECTANGLE---
 
 # Rectangle
-canvas.create_rectangle(10,200,390,300,fill='red', width=1)
+l=canvas.create_rectangle(10,200,390,300,fill='red', width=1)
 
 # -----------
-
 
 # Start the app
 root.mainloop()
