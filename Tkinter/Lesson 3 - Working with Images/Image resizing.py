@@ -43,3 +43,12 @@ Label(root, text='Bottom text').pack()
 
 # Start the app
 root.mainloop()
+
+
+# import function
+
+def resize(directory,width,height):
+    base=Image.open(directory)
+    resize=base.resize((width,height))
+    photoimg=ImageTk.PhotoImage(resize)
+    return photoimg
